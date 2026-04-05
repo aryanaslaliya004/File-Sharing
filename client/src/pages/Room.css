@@ -1,0 +1,154 @@
+.room-container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.room-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.connection-badge {
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    text-transform: capitalize;
+}
+
+.connection-badge.connected {
+    color: var(--success);
+    border-color: var(--success);
+}
+
+.upload-area {
+    background: var(--bg-card);
+    border: 2px dashed var(--border);
+    border-radius: 1.5rem;
+    padding: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    transition: all 0.2s;
+}
+
+.upload-area:hover {
+    border-color: var(--primary);
+    background: rgba(99, 102, 241, 0.05);
+}
+
+.upload-icon {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.upload-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.action-btn {
+    background: var(--bg-dark);
+    color: var(--text-primary);
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid var(--border);
+    transition: all 0.2s ease;
+    min-width: 100px;
+}
+
+.action-btn:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    transform: translateY(-2px);
+    color: white;
+}
+
+.transfers-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.transfer-item {
+    background: var(--bg-card);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid var(--border);
+}
+
+.file-icon {
+    background: var(--bg-dark);
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    color: var(--text-secondary);
+}
+
+.file-details {
+    flex: 1;
+}
+
+.file-details h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.progress-bar-container {
+    height: 6px;
+    background: var(--bg-dark);
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 0.25rem;
+}
+
+.progress-bar {
+    height: 100%;
+    background: var(--primary);
+    transition: width 0.2s;
+}
+
+.file-size {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.transfer-actions {
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.success-icon {
+    color: var(--success);
+}
+
+.download-btn {
+    color: var(--primary);
+    padding: 0.5rem;
+    border-radius: 50%;
+    background: rgba(99, 102, 241, 0.1);
+}
+
+.download-btn:hover {
+    background: rgba(99, 102, 241, 0.2);
+}
+
+.percent {
+    font-weight: 600;
+    color: var(--text-secondary);
+}

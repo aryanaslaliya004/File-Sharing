@@ -1,0 +1,105 @@
+.settings-container {
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.settings-header {
+    margin-bottom: 2rem;
+}
+
+.settings-section {
+    background: var(--bg-card);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--border);
+}
+
+.settings-section h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: background 0.2s;
+}
+
+.setting-item:hover {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.setting-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.setting-icon {
+    color: var(--text-secondary);
+    display: flex;
+}
+
+.setting-icon.error {
+    color: var(--error);
+}
+
+.text-error {
+    color: var(--error);
+}
+
+/* Toggle Switch */
+.toggle-switch {
+    width: 50px;
+    height: 28px;
+    background: var(--bg-dark);
+    border-radius: 20px;
+    padding: 2px;
+    position: relative;
+    transition: background 0.3s;
+    border: 1px solid var(--border);
+}
+
+.toggle-switch.active {
+    background: var(--success);
+    border-color: var(--success);
+}
+
+.toggle-thumb {
+    width: 22px;
+    height: 22px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 3px;
+    transition: transform 0.3s;
+}
+
+.toggle-switch.active .toggle-thumb {
+    transform: translateX(22px);
+}
+
+.app-info {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 3rem;
+    opacity: 0.6;
+}
